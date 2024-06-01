@@ -1,0 +1,111 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    background-color: rgb(58, 58, 58);
+    width: 40%;
+    height: 70vh;
+    min-width: 500px;
+    position: absolute;
+    top: 5%;
+    left: 32%;
+    color: rgba(0, 0, 0, 0.664);
+    padding-bottom: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.338);
+}
+
+.timer {
+    position: relative;
+    width: 44%;
+    height: 40%;
+    background: seashell;
+    top: 130px;
+    left: 27%;
+    font-family: 'bold', monospace;
+    padding: 30px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(65, 5, 145, 0.25);
+    transition: all 0.3s ease;
+}
+
+.timer:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 80px rgba(255, 255, 255, 0.7);
+}
+
+.buttons {
+    width: 80%;
+    margin: 160px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    width: 120px;
+    height: 80px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border: none;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+.lap-times {
+    width: 80%;
+    margin: 120px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lap-times h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.lap-times ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lap-times ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lap-times ul li:last-child {
+    border-bottom: none;
+}
+
+.buttons button:nth-last-child(2) {
+    background-color: rgb(133, 127, 125);
+}
+
+.buttons button:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    transform: scale(1.13);
+}
+
+.buttons button:active {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.7);
+}
